@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   - Adopt LAPL:
     - reorganize the repository structure,
 	- remove obsolete source files,
-	- add `lapl/LAPL.md`.
+	- add [lapl/LAPL.md](lapl/LAPL.md).
 - 2022-12-07
   - Add gostudy.go.
   - Move main.go to cmd/gostudy/main.go.
