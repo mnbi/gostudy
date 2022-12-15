@@ -1,40 +1,31 @@
+// Implementation for LAPL
+// Cahpter 0: Hello, world!
 package main
 
 import (
 	"fmt"
-	"os"
 )
 
+const msg = "Hello, world!"
+
 func greeting() string {
-	return "Hello, world!"
+	return msg
 }
 
 func main() {
-
-	cmd, _ := parseArgs(os.Args)
-
-	switch cmd {
-	case "greeting":
-		msg := greeting()
-		fmt.Println(msg)
-	case "help":
-		appName := os.Args[0]
-		fmt.Printf("%s [command] [args...]\n", appName)
-		fmt.Println("command:")
-		fmt.Println("  cat")
-		fmt.Println("  greeting")
-		fmt.Println("  version")
-		fmt.Println("  help")
-	default:
-		fmt.Println("unknown command")
-	}
-
+	fmt.Println(greeting())
 }
 
-func parseArgs(args []string) (string, []string) {
-	if len(args) <= 1 {
-		return "", args
-	}
+/*
+   How to run the program:
+     > go run ./greeting
 
-	return args[1], args[2:]
-}
+   How to build the source code:
+     > go build ./greeting
+
+   How to write a string literal in source code:
+     -> see the function, `greeting()`
+
+   How to output a message to the screen:
+     -> use `fmt.Println(...)`
+*/
