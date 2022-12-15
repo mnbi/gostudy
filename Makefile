@@ -1,6 +1,6 @@
 .PHONY: build
 build:
-	go build ./...
+	go build -v ./...
 
 .PHONY: test
 test:
