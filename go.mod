@@ -1,3 +1,3 @@
-module github.com/mnbi/gostudy
+module github.com/mnbi/laplgo
 
 go 1.19
