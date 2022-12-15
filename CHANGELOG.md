@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 - 2022-12-15
-  - Add an implementation for `greeting`
+  - Add an implementation for `greeting` and `filter/echo`.
 
 ## [0.0.2]
 - 2022-12-15
